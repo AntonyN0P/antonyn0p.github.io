@@ -1,5 +1,5 @@
 ---
-permalink: /about.md
+permalink: /About.md
 title: "About"
 toc: true
 author_profile: true
