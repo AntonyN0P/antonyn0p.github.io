@@ -1,5 +1,5 @@
 ---
-permalink: /about.md
+permalink: /about.html
 title: "About"
 toc: true
 ---
