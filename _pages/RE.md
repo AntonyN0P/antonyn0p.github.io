@@ -118,7 +118,7 @@ author_profile: true
 
 
 ## Ресурсы для практики
-*CTF, Challenges and git repo для практики*
+*CTF, Challenges and git repos для практики*
 
 - [Crackmes.de](http://www.crackmes.de/)
 - [OSX Crackmes](https://reverse.put.as/crackmes/)
