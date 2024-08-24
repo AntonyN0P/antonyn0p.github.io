@@ -70,6 +70,100 @@ author_profile: true
 - [tcpxtract](https://tcpxtract.sourceforge.net/) — Извлечение файлов из сетевого трафика.
 - [Wireshark](https://www.wireshark.org/) — инструмент для анализа сетевого трафика.
 
+## Анализ исполняемых файлов
+
+- [PEBear](https://github.com/hasherezade/pe-bear-releases/releases/) — Превосходный, бесплатный инструмент для анализа PE 32/64 файлов, получения handles.
+- [CFF Explorer](http://www.ntcore.com/exsuite.php)
+- [Cerbero Profiler](http://cerbero.io/profiler/) // [Lite PE Insider](http://cerbero.io/peinsider/)
+- [Detect It Easy](http://ntinfo.biz/)
+- [PeStudio](http://www.winitor.com/)
+- [PEiD](https://tuts4you.com/download.php?view.398)
+- [dnSpy](https://github.com/0xd4d/dnSpy)
+- [PPEE](https://www.mzrst.com/)
+- [MachoView](https://github.com/gdbinit/MachOView)
+- [nm](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/nm.1.html) - View Symbols
+- [file](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/file.1.html) - File information
+- [codesign](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/codesign.1.html) - Code signing information usage: codesign -dvvv filename
+
+## Анализа байткода
+
+- [Bytecode Viewer](https://bytecodeviewer.com/)
+- [Bytecode Visualizer](http://www.drgarbage.com/bytecode-visualizer/)
+- [JPEXS Flash Decompiler](https://www.free-decompiler.com/flash/)
+
+## Дизассемблеры/декомпиляторы
+- [Ghidra](https://ghidra-sre.org/)
+- [IDA Pro](https://www.hex-rays.com/products/ida/index.shtml)
+- [Binary Ninja](https://binary.ninja/)
+- [JEB](https://www.pnfsoftware.com/jeb2/)
+- [Radare](http://www.radare.org/r/)
+- [Hopper](http://hopperapp.com/)
+- [Capstone](http://www.capstone-engine.org/)
+- [objdump](http://linux.die.net/man/1/objdump)
+- [fREedom](https://github.com/cseagle/fREedom)
+- [Retdec](https://retdec.com/)
+- [Snowman](https://derevenets.com/)
+
+
+## Скрипты для IDA
+- [IDA Python Src](https://github.com/idapython/src)
+- [IDC Functions Doc](https://www.hex-rays.com/products/ida/support/idadoc/162.shtml)
+- [Using IDAPython to Make your Life Easier](http://researchcenter.paloaltonetworks.com/tag/idapython/)
+- [Introduction to IDA Python](https://tuts4you.com/download.php?view.3229)
+- [The Beginner's Guide to IDA Python](https://leanpub.com/IDAPython-Book)
+- [IDA Plugin Contest](https://www.hex-rays.com/contests/)
+- [onehawt IDA Plugin List](https://github.com/onethawt/idaplugins-list)
+- [pefile Python Libray](https://github.com/erocarrera/pefile)
+- [ghidra ninja](https://github.com/ghidraninja/ghidra_scripts)
+
+
+## Ресурсы для практики
+*CTF, Challenges and git repo для практики*
+
+- [Crackmes.de](http://www.crackmes.de/)
+- [OSX Crackmes](https://reverse.put.as/crackmes/)
+- [ESET Challenges](http://www.joineset.com/jobs-analyst.html)
+- [Flare-on Challenges](http://flare-on.com/)
+- [Github CTF Archives](http://github.com/ctfs/)
+- [Reverse Engineering Challenges](http://challenges.re/)
+- [xorpd Advanced Assembly Exercises](http://www.xorpd.net/pages/xchg_rax/snip_00.html)
+- [Virusshare.com](http://virusshare.com/)
+- [Contagio](http://contagiodump.blogspot.com/)
+- [Malware-Traffic-Analysis](https://malware-traffic-analysis.com/)
+- [Malshare](http://malshare.com/)
+- [Malware Blacklist](http://www.malwareblacklist.com/showMDL.php)
+- [malwr.com](https://malwr.com/)
+- [vxvault](http://vxvault.net/)
+- [jstrosch/malware-samples](https://github.com/jstrosch/malware-samples) — сэмплы вредоносного ПО на ГИТе, в том числе в дампе оперативной памяти.
+- [ytisf/theZoo](https://github.com/ytisf/theZoo) — зоопарк вредоносного ПО на ГИТе, для исследователей и желающих попрактиковаться.
+- [MalwareBazaar](https://bazaar.abuse.ch/) — одно из основных мест, где можно получить интересные и свежие образцы ВПО.
+- [volatility/wiki/Memory-Samples](https://github.com/volatilityfoundation/volatility/wiki/Memory-Samples) — для желающих попрактиковать свои скилы в исследовании дампов оперативной памяти, зараженных ВПО.
+- [Dump-GUY/Malware-analysis-and-Reverse-engineering](https://github.com/Dump-GUY/Malware-analysis-and-Reverse-engineering) — сэмплы, базы IDA Pro для анализа ВПО.
 
 
 
+## Полезные книги
+- [«Вскрытие покажет» М. Сикорски, Э.Хонинг ](https://www.amazon.co.uk/Practical-Malware-Analysis-Hands-Dissecting/dp/1593272901)
+- [The Rootkit Arsenal](http://amzn.com/144962636X)
+- [«Руткиты и буткиты современный реверс вредоносного ПО и угрозы следующего поколения»](https://www.amazon.com/Rootkits-Bootkits-Reversing-Malware-Generation/dp/1593277164)
+- [The IDA Pro Book](http://amzn.com/1593272898)
+- [Reverse Engineering for Beginners](http://beginners.re/)
+- [Assembly Language for Intel-Based Computers (5th Edition) ](http://a.co/4OR6I9U)
+- [Practical Reverse Engineering](http://amzn.com/B00IA22R2Y)
+- [Reversing: Secrets of Reverse Engineering](http://amzn.com/B007032XZK)
+- [Malware Analyst's Cookbook](http://amzn.com/B0047DWCMA)
+- [Gray Hat Hacking](http://amzn.com/0071832386)
+- [The Art of Memory Forensics](http://amzn.com/1118825098)
+- [Hacking: The Art of Exploitation](http://amzn.com/1593271441)
+- [Fuzzing for Software Security](http://amzn.com/1596932147)
+- [Art of Software Security Assessment](http://amzn.com/0321444426)
+- [The Antivirus Hacker's Handbook](http://amzn.com/1119028752)
+- [Windows Internals Part 1](http://amzn.com/0735648735) [Part 2](http://amzn.com/0735665877)
+- [Inside Windows Debugging](http://amzn.com/0735662789)
+- [iOS Reverse Engineering](https://github.com/iosre/iOSAppReverseEngineering)
+- [The Shellcoders Handbook](http://a.co/6H55943)
+- [A Guide to Kernel Exploitation](http://a.co/aM4cENn)
+- [Agner's software optimization resources](http://www.agner.org/optimize/)
+- [Learning Malware Analysis](https://www.amazon.com/Learning-Malware-Analysis-techniques-investigate/dp/1788392507/)
+- [Binary Analysis](https://nostarch.com/binaryanalysis)
+- [Serious Cryptography](https://nostarch.com/seriouscrypto)
