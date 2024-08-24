@@ -1,5 +1,5 @@
 ---
-permalink: /RE/
+permalink: /DFIR/
 title: "Malware analysis notes"
 toc: true
 author_profile: true
