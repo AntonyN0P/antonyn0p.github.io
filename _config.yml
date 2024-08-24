@@ -17,9 +17,9 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Homee"
+title                    : "Home"
 title_separator          : "|"
-subtitle                 : "Test" # site tagline that appears below site title in masthead
+subtitle                 : "Russian Forensics" # site tagline that appears below site title in masthead
 name                     : "Home"
 description              : ""
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
