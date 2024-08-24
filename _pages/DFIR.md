@@ -69,10 +69,10 @@ author_profile: true
 - [Velociraptor](https://docs.velociraptor.app/) - ещё один фреймворк для сбора артефактов.
 
 ## Полезная литература
-The Art of Memory Forensics by Michael Hale Ligh, Andrew Case, Jamie Levy, Aaron Walters;
-File System Forensics Analysis by Brian Carrier;
-Windows Registry Forensics Advanced Digital Forensic Analysis of the Windows Registry by Harlan Carvey;
-Windows Forensics Analysis by Harlan Carvey;
-Digital Forensics and Incident Response by Gerard Johansen;
-INCIDENT RESPONSE & COMPUTER FORENSICS, SECOND EDITION by Kevin Mandia, Chris Prosise & Matt Pepe;
-FORENSIC ANALYSIS OF UNALLOCATED SPACE IN WINDOWS REGISTRY HIVE FILES by Jolanta Thomassen (диссертация);
+- The Art of Memory Forensics by Michael Hale Ligh, Andrew Case, Jamie Levy, Aaron Walters;
+- File System Forensics Analysis by Brian Carrier;
+- Windows Registry Forensics Advanced Digital Forensic Analysis of the Windows Registry by Harlan Carvey;
+- Windows Forensics Analysis by Harlan Carvey;
+- Digital Forensics and Incident Response by Gerard Johansen;
+- INCIDENT RESPONSE & COMPUTER FORENSICS, SECOND EDITION by Kevin Mandia, Chris Prosise & Matt Pepe;
+- FORENSIC ANALYSIS OF UNALLOCATED SPACE IN WINDOWS REGISTRY HIVE FILES by Jolanta Thomassen (диссертация);
