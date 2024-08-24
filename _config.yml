@@ -132,6 +132,7 @@ author:
       url: "https://github.com/AntonyN0P"
     - label: "Telegram channel"
       icon: "fab fa-fw fa-telegram"
+      url: "https://t.me/RussianF0rensics"
 
 # Site Footer
 footer:
@@ -144,8 +145,10 @@ footer:
       url: "https://x.com/yrevichus"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/anton-kuznetsov-6046a2235/"  
-
+      url: "https://www.linkedin.com/in/anton-kuznetsov-6046a2235/"
+    - label: "Telegram channel"
+      icon: "fab fa-fw fa-telegram"
+      url: "https://t.me/RussianF0rensics"
 
 # Reading Files
 include:
