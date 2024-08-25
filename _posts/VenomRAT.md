@@ -1,0 +1,60 @@
+---
+title:  "Phishing with Venom RAT analysis"
+date:   2024-04-22 07:43:45 +0600
+header:
+  teaser: "/assets/images/venom_rat/Venom_Teaser.jpg"
+categories: 
+  - tutorial
+tags:
+  - red team
+  - windows
+  - malware
+---
+
+#Intro.
+In early April, organizations in the Russian Federation (and not only) received letters from an unknown sender. In the contents of the letter, besides wishing a good day and asking to reply “soon”, there was a RAR archive, and inside the archive was a *.bat file
+
+![1](/assets/images/venom_rat/1.png){:class="img-responsive"}
+
+After checking the contents in the sandbox, some artifacts were provided, indicating that the email clearly contained something suspicious, but the NWI was unable to determine for sure whether it was malware or not.
+
+However, there were some components of the bat file: obfuscated PowerShell strings.
+
+![2](/assets/images/venom_rat/2.jfif){:class="img-responsive"}
+
+This was enough to start analyzing the content, find IoC's, and see if there were any in the traffic from the organization.
+
+#Analyzing the attachment.
+
+As we have already mentioned, the archive contained a bat file.
+
+There are obfuscated functions and encrypted payloads inside, but let's talk about it in order.
+
+![Bat_File_Part1](/assets/images/venom_rat/3.png){:class="img-responsive"}
+
+![Bat_File_Part2](/assets/images/venom_rat/4.png){:class="img-responsive"}
+
+#Deobfuscation
+
+The first part of the bat script declares the necessary variables in obfuscated form
+
+```batch
+set “dnRHZ3NQ=set R1NCSw===1 && start ‘’ /min ””
+set “UFVTQVZB=&& exit”
+set “eUxyZUdk=not defined R1NCSw==if %eUxyZUdk:=% (%dnRHZ3NQ:=%%0 %UFVTQVZB:=%)”.
+```
+
+Then there are 2 AES CBC encrypted peyloads, which are located in comments (in batch ':::').
+The variables of the first part don't tell us much, so let's take the second part. To deobfuscate the second part of the .bat file contents, let's modify it a bit. Examining the 2nd part of the script at the top level, we can see that:
+1. The obfuscated string is assigned to the variable d2NKb09D: 
+set “d2NKb09D=WxNzdnindxNzdnowxNzdnsPxNzdnowxNzdnerSxNzdnhxNzdnelxNzdnl\xNzdnvxNzdn1.xNzdn0\pxNzdnowxNzdnersxNzdnhexNzdnllxNzdn.exNzdnxexNzdn”
+2. After that, the string is deobfuscated by replacing the combination “xNzdn” with an empty value “” and added to the path C:\Windows\System32\, the resulting content is placed in the variable T1BHZ0FQ, which executes the obfuscated code via pipe (number 2 in the figure below).
+3. At the next step, the obfuscated code is added to the dFFKVXdT variable, output with the echo command (number 1 in the figure below) and passed through pipe to variable 2.
+
+![5](/assets/images/venom_rat/5.png){:class="img-responsive"}
+
+We already know the process of code obfuscation, let's look at the deobfuscated code. For this purpose, we will deobfuscate it on an isolated virtual machine in cmd.exe:
+1.  First, let's find out what final path the variable from point 2 contains. Declare the variable and perform deobfuscation:
+
+![6](/assets/images/venom_rat/6.png){:class="img-responsive"}
+
