@@ -224,7 +224,7 @@ Dim hd As LongPtr
 
 Функция **R1** отвечает за создание в директории пользователя **%Temp%** папки **OfficeInit** и перемещение дропнутых файлов туда, также туда перемещается cmdl32.exe (легитимный исполняемый файл из директории system32), после чего легитимный процесс запускается он подгружает вредоносный код из библиотеки **cmpbk32.dll**. Т.е. реализуется атака side-on loading DLL для обхода СЗИ. (рис 13)
 
-![13](/assets/images/twisted_panda/12.png){:class="img-responsive"}
+![13](/assets/images/twisted_panda/13.png){:class="img-responsive"}
 
 Дальнейший анализ библиотеки и файла INIT можно увидеть в [отчёте CheckPoint](https://research.checkpoint.com/2022/twisted-panda-chinese-apt-espionage-operation-against-russians-state-owned-defense-institutes/).
 
