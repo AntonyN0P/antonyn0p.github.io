@@ -117,6 +117,25 @@ author_profile: true
 - [ghidra ninja](https://github.com/ghidraninja/ghidra_scripts)
 
 
+## Анализ APK
+- [Android Developer Studio](http://developer.android.com/sdk/index.html)
+- [APKtool](http://ibotpeaches.github.io/Apktool/)
+- [dex2jar](https://github.com/pxb1988/dex2jar)
+- [Bytecode Viewer](https://bytecodeviewer.com/)
+- [IDA Pro](https://www.hex-rays.com/products/ida/index.shtml)
+
+## Анализ IPA
+- [frida-ios-dump](https://github.com/AloneMonkey/frida-ios-dump) - дамп IPA и расшифрование данных с IOS, анализ IPA;
+- [DVIA-v2](https://github.com/prateek147/DVIA-v2) - платформа на IOS для практики поиска уязвимостей, запуска malware;
+
+## Mac Decrypt
+
+* [Cerbero Profiler](http://cerbero-blog.com/?p=1311) - Select all -> Copy to new file
+* [AppEncryptor](https://github.com/AlanQuatermain/appencryptor) - Tool for decrypting
+* [Class-Dump](http://stevenygard.com/projects/class-dump/) - use deprotect option 
+* [readmem](https://github.com/gdbinit/readmem) - OS X Reverser's process dumping tool
+
+
 ## Ресурсы для практики
 *CTF, Challenges and git repos для практики*
 
