@@ -125,15 +125,15 @@ author_profile: true
 - [IDA Pro](https://www.hex-rays.com/products/ida/index.shtml)
 
 ## Анализ IPA
-- [frida-ios-dump](https://github.com/AloneMonkey/frida-ios-dump) - дамп IPA и расшифрование данных с IOS, анализ IPA;
-- [DVIA-v2](https://github.com/prateek147/DVIA-v2) - платформа на IOS для практики поиска уязвимостей, запуска malware;
+- [frida-ios-dump](https://github.com/AloneMonkey/frida-ios-dump) 
+- [DVIA-v2](https://github.com/prateek147/DVIA-v2) 
 
 ## Mac Decrypt
 
-* [Cerbero Profiler](http://cerbero-blog.com/?p=1311) - Select all -> Copy to new file
-* [AppEncryptor](https://github.com/AlanQuatermain/appencryptor) - Tool for decrypting
-* [Class-Dump](http://stevenygard.com/projects/class-dump/) - use deprotect option 
-* [readmem](https://github.com/gdbinit/readmem) - OS X Reverser's process dumping tool
+* [Cerbero Profiler](http://cerbero-blog.com/?p=1311) 
+* [AppEncryptor](https://github.com/AlanQuatermain/appencryptor) 
+* [Class-Dump](http://stevenygard.com/projects/class-dump/) 
+* [readmem](https://github.com/gdbinit/readmem) 
 
 
 ## Ресурсы для практики
