@@ -153,11 +153,11 @@ author_profile: true
 - [Malware Blacklist](http://www.malwareblacklist.com/showMDL.php)
 - [malwr.com](https://malwr.com/)
 - [vxvault](http://vxvault.net/)
-- [jstrosch/malware-samples](https://github.com/jstrosch/malware-samples) — сэмплы вредоносного ПО на ГИТе, в том числе в дампе оперативной памяти.
-- [ytisf/theZoo](https://github.com/ytisf/theZoo) — зоопарк вредоносного ПО на ГИТе, для исследователей и желающих попрактиковаться.
-- [MalwareBazaar](https://bazaar.abuse.ch/) — одно из основных мест, где можно получить интересные и свежие образцы ВПО.
-- [volatility/wiki/Memory-Samples](https://github.com/volatilityfoundation/volatility/wiki/Memory-Samples) — для желающих попрактиковать свои скилы в исследовании дампов оперативной памяти, зараженных ВПО.
-- [Dump-GUY/Malware-analysis-and-Reverse-engineering](https://github.com/Dump-GUY/Malware-analysis-and-Reverse-engineering) — сэмплы, базы IDA Pro для анализа ВПО.
+- [jstrosch/malware-samples](https://github.com/jstrosch/malware-samples) 
+- [ytisf/theZoo](https://github.com/ytisf/theZoo)
+- [MalwareBazaar](https://bazaar.abuse.ch/) 
+- [volatility/wiki/Memory-Samples](https://github.com/volatilityfoundation/volatility/wiki/Memory-Samples) 
+- [Dump-GUY/Malware-analysis-and-Reverse-engineering](https://github.com/Dump-GUY/Malware-analysis-and-Reverse-engineering)
 
 
 
