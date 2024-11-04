@@ -46,11 +46,14 @@ author_profile: true
 ## Исследование файловой системы Windows
 - [MFT-Parser](http://az4n6.blogspot.com/2015/09/whos-your-master-mft-parsers-reviewed.html) - Сравнение результатов парсинга MFT
 - [MFTEcmd](https://binaryforay.blogspot.com/2018/06/introducing-mftecmd.html) - MFT Parser by Eric Zimmerman
-- [MFTExtractor](https://github.com/aarsakian/MFTExtractor) - написанный на go parser MFT
+- [MFTExtractor](https://github.com/aarsakian/MFTExtractor) 
 - [NTFS journal parser](http://strozfriedberg.github.io/ntfs-linker/)
 - [NTFS USN Journal parser](https://github.com/PoorBillionaire/USN-Journal-Parser)
 - [RecuperaBit](https://github.com/Lazza/RecuperaBit)
 - [Python-ntfs](https://github.com/williballenthin/python-ntfs) - библиотека для анализа NTFS на python
+
+## Анализ артефактов ОС Linux
+- [usbrip](https://github.com/snovvcrash/usbrip) - is a simple forensics tool with command line interface that lets you keep track of USB device artifacts (i.e., USB event history) on Linux machines.
 
 ## Централизованный сбор артефактов (Triage) c ОС Linux
 
