@@ -5,5 +5,32 @@ search: false
 
 @charset "utf-8";
 
+// 1. ИМПОРТИРУЕМ ШРИФТ ДЛЯ КОДА (REVERSE ENGINEERING)
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+
+// 2. ПЕРЕОПРЕДЕЛЯЕМ ПЕРЕМЕННЫЕ (SASS) ДЛЯ ТЕМЫ
+// Это нужно сделать ДО импорта основного скина
+
+// --- Цвета "Cyberpunk Detective" ---
+$background-color: #0d1117 !default; // Очень темный фон, как у GitHub
+$text-color: #c9d1d9 !default; // Чуть светлее серого
+$primary-color: #00ffff !default; // "Электрический" бирюзовый/циан для акцентов
+$link-color: $primary-color !default; //
+$link-color-hover: lighten($primary-color, 15%) !default; // Ссылки при наведении
+
+// --- Шрифты ---
+$monospace: "JetBrains Mono", Consolas, "Liberation Mono", Courier, monospace !default; // ЛУЧШИЙ ШРИФТ ДЛЯ КОДА
+$code-font-size: 0.85em !default; //
+$code-background-color: #161b22 !default; // Фон для блоков кода, чуть светлее основного
+$code-background-color-dark: #161b22 !default;
+
+// --- Остальные элементы ---
+$border-color: #30363d !default; // Цвет границ
+$sidebar-background-color: $background-color !default; // Фон сайдбара
+$footer-background-color: $background-color !default; // Фон футера
+$button-background-color: $primary-color !default;
+$button-color: #000000 !default; // Текст на кнопках
+
+// 3. ИМПОРТИРУЕМ СКИН И ТЕМУ
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
